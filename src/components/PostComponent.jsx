@@ -25,7 +25,7 @@ const PostComponent = () => {
             </h2>
             <div className="w-[495px] h-[248px]">
               <div
-                className={`w-[495px] h-[248px] bg-cover bg-no-repeat ${post.picture.postPic}`}
+                className={`w-[495px] h-[248px] rounded-xl bg-cover bg-no-repeat ${post.picture.postPic}`}
               ></div>
             </div>
             <p className="text-left text-[16px] text-gray-800">{post.parag}</p>
