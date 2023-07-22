@@ -37,7 +37,7 @@ const Home = () => {
               </Button>
               <Button
                 name={`sortBttn`}
-                className={`w-[84px] h-[40px] border-2 rounded-lg border-gray-800 flex justify-center items-center gap-[14px]`}
+                className={`w-[84px] h-[40px] bg-[#f6f6f6] border-2 rounded-lg border-gray-800 flex justify-center items-center gap-[14px]`}
               >
                 <>
                   <div className="w-[14px] h-[12px] bg-sort-icon bg-no-repeat bg-cover"></div>
