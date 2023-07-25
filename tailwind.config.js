@@ -15,6 +15,7 @@ module.exports = {
         "comment-icon" : "url('../assets/comment-icon.svg')",
         "eye-icon" : "url('../assets/akar-icons_eye.svg')",
         "laptop-img" : "url('../assets/laptop-image.png')",
+        "laptop-img-post" : "url('../assets/laptop-image-post.png')",
         "filter-icon" : "url('../assets/filter-icon.svg')",
         "sort-icon" : "url('../assets/up-down-arrow-icon.svg')",
         "search-icon" : "url('../assets/search-icon.svg')",

@@ -5,7 +5,7 @@ const NavBar = () => {
   return (
     <>
       <div className="w-full border-b-2 border-nav-stroke">
-        <nav className="w-[1440px] h-[92px] px-[32px] py-[28px] mx-auto flex justify-center items-center space-x-[422px]">
+        <nav className="w-[1440px] h-[92px] px-[32px] py-[28px] mx-auto flex justify-between items-center">
           <div className="h-full flex justify-center items-center gap-[42px]">
             <a
               href="/"
