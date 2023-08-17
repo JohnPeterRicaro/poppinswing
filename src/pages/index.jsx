@@ -3,6 +3,7 @@ import ComponentTitle from "@/components/ComponentTitle";
 import RecentPost from "@/components/RecentPost";
 import SliderComponent from "@/components/SliderComponent";
 import TrendingComponent from "@/components/TrendingComponent";
+import { FaCaretRight, FaCaretLeft } from "react-icons/fa";
 
 const Home = () => {
   return (
@@ -61,53 +62,27 @@ const Home = () => {
         <div className="mt-[56px] w-full flex justify-end items-center gap-[24px]">
           <Button
             name={`newPostBttn`}
-            className={`w-[168px] h-[48px] rounded-lg bg-[#f6f6f6] border-2 border-gray-800 flex justify-center items-center gap-[12px]`}
+            className={`w-[168px] h-[48px] rounded-lg bg-[#f6f6f6] border-2 border-gray-800 flex justify-center items-center gap-[12px] group transition ease-in-out hover:bg-gray-800 hover:border-gray-300`}
           >
             <>
-              <svg
-                width="8"
-                height="14"
-                viewBox="0 0 8 14"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M6.6665 1.6665L1.33317 6.99984L6.6665 12.3332"
-                  stroke="#121420"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
+              <FaCaretLeft
+                className="transition ease-in-out group-hover:text-white"/>
 
-              <h5 className="text-[16px] text-gray-800 font-bold">
+              <h5 className="text-[16px] text-gray-800 font-bold group-hover:text-white">
                 Newer Post
               </h5>
             </>
           </Button>
           <Button
             name={`prevPostBttn`}
-            className={`w-[168px] h-[48px] rounded-lg bg-[#f6f6f6] border-2 border-gray-800 flex justify-center items-center gap-[12px]`}
+            className={`w-[168px] h-[48px] rounded-lg bg-[#f6f6f6] border-2 border-gray-800 flex justify-center items-center gap-[12px] group transition ease-in-out hover:bg-gray-800 hover:border-gray-300`}
           >
             <>
-              <h5 className="text-[16px] text-gray-800 font-bold">
+              <h5 className="text-[16px] text-gray-800 font-bold transition ease-in-out group-hover:text-white">
                 Older post
               </h5>
-              <svg
-                width="8"
-                height="14"
-                viewBox="0 0 8 14"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M1.3335 1.6665L6.66683 6.99984L1.3335 12.3332"
-                  stroke="#121420"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
+              <FaCaretRight
+                className="transition ease-in-out group-hover:text-white"/>
             </>
           </Button>
         </div>

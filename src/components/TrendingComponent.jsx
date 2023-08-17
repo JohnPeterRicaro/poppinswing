@@ -1,5 +1,7 @@
 import trendingData from "@/data/TrendingData";
 import Button from "./Button";
+import { FaArrowUp } from "react-icons/fa";
+import { AiOutlineEye, AiOutlineComment } from "react-icons/ai";
 
 const TrendingComponent = ({ data }) => {
   return (
@@ -37,29 +39,28 @@ const TrendingComponent = ({ data }) => {
           <div className="w-full flex justify-between items-center">
             <Button
               name={`readMoreBttn`}
-              className={`w-[161px] h-[40px] bg-[#FBFBFB] border-2 border-[#33322E] flex justify-center items-center gap-[14px] rounded-[8px]`}
+              className={`w-[161px] h-[40px] bg-[#FBFBFB] border-2 border-[#33322E] flex justify-center items-center gap-[14px] rounded-[8px] transition ease-in-out group hover:bg-gray-800`}
             >
               <>
-                <h1 className="text-[16px] text-gray-800 font-bold">
+                <h1 className="text-[16px] text-gray-800 font-bold transition ease-in-out group-hover:text-white">
                   Read More
                 </h1>
-                <div className=" bg-arrow-icon bg-contain bg-no-repeat w-[12px] h-[12px]"></div>
+                <FaArrowUp className="text-lg rotate-45 text-gray-800 transition ease-in-out group-hover:text-white" />
               </>
             </Button>
             <div className="flex justify-center items-center gap-[26px]">
-                <div className="flex justify-center items-center gap-[10px]">
-                    <div className=" bg-eye-icon bg-cover bg-no-repeat w-[20px] h-[20px]"></div>
-                    <h5>5</h5>
-                </div>
-                <div className="flex justify-center items-center gap-[10px]">
-                    <div className=" bg-comment-icon bg-cover bg-no-repeat w-[20px] h-[18.47px]"></div>
-                    <h5>1</h5>
-                </div>
+              <div className="flex justify-center items-center gap-[10px]">
+                <AiOutlineEye className="text-2xl"/>
+                <h5>5</h5>
+              </div>
+              <div className="flex justify-center items-center gap-[10px]">
+                <AiOutlineComment className="text-2xl"/>
+                <h5>1</h5>
+              </div>
             </div>
           </div>
         </div>
-        <div className=" bg-laptop-img bg-fit bg-no-repeat w-[480px] h-[480px] rounded-lg">
-        </div>
+        <div className=" bg-laptop-img bg-fit bg-no-repeat w-[480px] h-[480px] rounded-lg"></div>
       </div>
     </>
   );

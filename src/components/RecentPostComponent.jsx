@@ -1,4 +1,5 @@
 import recentPostData from "@/data/RecentPostData";
+import { AiOutlineEye, AiOutlineComment } from "react-icons/ai"
 
 const RecentPostComponent = () => {
   return (
@@ -33,11 +34,11 @@ const RecentPostComponent = () => {
               {post.button}
               <div className="flex justify-center items-center gap-[24px]">
                 <div className="flex justify-center items-center gap-[8px]">
-                  <div className=" bg-eye-icon bg-cover bg-no-repeat w-[20px] h-[20px]"></div>
+                  <AiOutlineEye className="text-2xl"/>
                   <p className="text-[16px] text-gray-800">{post.views}</p>
                 </div>
                 <div className="flex justify-center items-center gap-[8px]">
-                  <div className=" bg-eye-icon bg-cover bg-no-repeat w-[20px] h-[20px]"></div>
+                  <AiOutlineComment className="text-xl"/>
                   <p className="text-[16px] text-gray-800">{post.views}</p>
                 </div>
               </div>
